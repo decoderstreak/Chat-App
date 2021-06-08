@@ -17,6 +17,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+// import 'react-native-gesture-handler';
 
 import {
   Colors,
@@ -25,20 +26,16 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Signup from './auth/signup';
+import Login from './auth/login';
 class App extends React.Component{
   render()
   {
     return(
-      <View>
-        <Text>Let's create a chat App</Text>
-        <Text>It's cool to learn programming right now</Text>
-        <Text>End date of chat App completion is 4th june ------------So that u will be gud at firestore 
-          storing data in database that's cool right 
-          start working on that project today and remember 
-          one thing that learn firestore perfectly don't break the rythm ok cool
-          hello chat app whas'supppppppppppppppp
-        </Text>
-      </View>
+      // port running 8082
+        // <Login />
+        <Signup />
+        
     )
   }
 }
